@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minta Maaf ke Aliya</title>
+    <script>
+        function mintaMaaf() {
+            let nama = prompt('Tapi sebelum itu, masukin nama depan kamu disini:');
+            let namaAsli = 'aliya';
+
+            if (nama.toLowerCase() === namaAsli) {
+                alert('Hallo ' + nama + '!');
+            } else {
+                alert('Ini beneran kan sama Aliya?');
+            }
+
+            alert('Maafin gw yaa soal sok tahu hehehe');
+            
+            let maafin = prompt('Udah maafin gw belum? (yes/no)');
+            maafin = prompt('Akhh yang bener udah di maafin nih gw :):):)');
+
+            let banyak = parseInt(prompt('Mau di ucapin berapa kali nih biar gw di maafin? :)'));
+            while (isNaN(banyak) || banyak <= 0) {
+                banyak = parseInt(prompt('Serius, mau gw bilang maaf berapa kali biar di maafin?'));
+            }
+
+            let output = '';
+            for (let i = 0; i < banyak; i++) {
+                output += 'Maafin gw ya pliss :):) \n';
+            }
+
+            alert(output);
+        }
+    </script>
+</head>
+<body>
+    <h1>Minta Maaf ke Aliya</h1>
+    <button onclick="mintaMaaf()">Mulai</button>
+</body>
+</html>
 
